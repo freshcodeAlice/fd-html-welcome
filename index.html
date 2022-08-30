@@ -6,39 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h2 {
-           color: dodgerblue;
-        }
-
-        p {  /* 0001 - tag selector */
-            color: rgb(67, 29, 68); 
-            font-size: 20px;
-         }
-
-        .red-big-text {  /* 0010 */
-            color: red;
-            font-size: 30px;
-        }
-
-        
-        #text-paragraph { /* 0100 */
+        .green-bold {
             font-weight: bold;
-            font-size: 40px;
+            color: green;
         }
 
-        /* Inline style - 1000 */
+        .blue-bold {
+            font-weight: bold;
+            color: blue;
+        }
+        .violet {
+            color: violet;
+        }
 
+        .violet-grey {
+            color: #666666;
+        }
 
+        .wine{
+            color: #B00040;
+        }
     </style>
 </head>
 <body> 
-      <section>
-        <article>
-            <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi numquam modi quis ad quisquam veniam quam natus suscipit error dignissimos atque et ducimus consequatur veritatis quas iusto explicabo blanditiis ea, illum labore repellat nobis illo ut. Quae aliquid vero deleniti? Omnis eveniet illo voluptates assumenda illum voluptatem beatae provident.</p>
-            <p id="text-paragraph" class="red-big-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi numquam modi quis ad quisquam veniam quam natus suscipit error dignissimos atque et ducimus consequatur veritatis quas iusto explicabo blanditiis ea, illum labore repellat nobis illo ut. Quae aliquid vero deleniti? Omnis eveniet illo voluptates assumenda illum voluptatem beatae provident.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi numquam modi quis ad quisquam veniam quam natus suscipit error dignissimos atque et ducimus consequatur veritatis quas iusto explicabo blanditiis ea, <span class="red-big-text">illum labore repellat nobis illo ut. Quae aliquid</span> vero deleniti? Omnis eveniet illo voluptates assumenda illum voluptatem beatae provident.</p>
-        </article>
-      </section>
+  <span class="green-bold">  p </span> { <br />
+    <span class="green-bold">font-family</span>: <span class="green-bold">Verdana, sans-serif</span>;
+      } <br />
+      <span class="green-bold">h2 </span>{  <br />
+        <span class="green-bold"> font-size</span>: 110%; <br />
+         color: red; <br />
+         background: white; <br />
+      }  <br />
+      .note {  <br />
+        color: red;  <br />
+        background: yellow;  <br />
+        font-weight: bold;  <br />
+      }  <br />
+      p.warning {  <br />
+        background: url(warning.png) no-repeat fixed top;  <br />
+      }  <br />
+      #paragraph1 {  <br />
+        margin: 0;  <br />
+      } <br />
+      a:hover { <br />
+        text-decoration: none; <br />
+      } <br />
+      #news p { <br />
+        color: red; <br />
+      } <br />
 </body>
 </html>
