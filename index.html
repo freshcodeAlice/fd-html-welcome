@@ -10,13 +10,20 @@
            color: dodgerblue;
         }
 
-        p {
+        p { /* Tag selector */
             color: rgb(67, 29, 68); 
-            /* font-size: 20px;  px = 1/96 inch - Absolute size */
-            /* font-size: 16pt; Typographic punkts */
             font-size: 20px;
          }
         
+        #text-paragraph { /* Id selector */
+            font-weight: bold;
+        }
+
+        .red-big-text {
+            color: red;
+            font-size: 30px;
+        }
+
     </style>
 </head>
 <body> 
@@ -24,7 +31,8 @@
         <article>
             <h2>Heading</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi numquam modi quis ad quisquam veniam quam natus suscipit error dignissimos atque et ducimus consequatur veritatis quas iusto explicabo blanditiis ea, illum labore repellat nobis illo ut. Quae aliquid vero deleniti? Omnis eveniet illo voluptates assumenda illum voluptatem beatae provident.</p>
-           
+            <p id="text-paragraph" class="red-big-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi numquam modi quis ad quisquam veniam quam natus suscipit error dignissimos atque et ducimus consequatur veritatis quas iusto explicabo blanditiis ea, illum labore repellat nobis illo ut. Quae aliquid vero deleniti? Omnis eveniet illo voluptates assumenda illum voluptatem beatae provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi numquam modi quis ad quisquam veniam quam natus suscipit error dignissimos atque et ducimus consequatur veritatis quas iusto explicabo blanditiis ea, <span class="red-big-text">illum labore repellat nobis illo ut. Quae aliquid</span> vero deleniti? Omnis eveniet illo voluptates assumenda illum voluptatem beatae provident.</p>
         </article>
       </section>
 </body>
