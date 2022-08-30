@@ -1,11 +1,21 @@
 h2 {
     font-size: 30px;
     background-color: aquamarine;
+    text-align: center;
 }
 
 
 p {
     color: red;
     font-size: 20px;
-    line-height: 1.5em; /* em - відносна одиниця виміру. 1em = 1 розмір шрифта батьківського елементу  */
+    line-height: 1.5em; 
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+a {
+    /* text-decoration-color: brown;
+    text-decoration-line: line-through;
+    text-decoration-style: solid; */
+    text-decoration: none;
 }
