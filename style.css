@@ -1,8 +1,8 @@
-.img {
+.starsky {
     width: 150px;
-    border: 4px solid red;
-    padding: 12px; /* all 4 sides 12px padding */
-    padding: 10px 20px; /* Top and bottom - 10px, Left and Right - 20px */
-    padding: 10px 20px 30px; /* 10px top, 20px left and right, 30px - bottom  */
-    padding: 10px 20px 30px 40px; /* Top 10px, Right 20px, Bottom 30px, Left 40px */
+    padding: 12px;
+    border: 2px solid grey;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-right-color: blue;
 }
