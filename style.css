@@ -7,9 +7,16 @@ body {
     background-color: aqua;
     border: 2px solid violet;
     box-sizing: border-box;
-
 }
 
-.center {
-    margin: 0 auto;
+.one {
+margin-bottom: 40px; /* Схлопування полів*/
+}
+
+.two {
+margin-top: 60px;
+}
+
+.three {
+
 }
