@@ -1,8 +1,11 @@
-.starsky {
-    width: 150px;
-    padding: 12px;
-    border: 2px solid grey;
-    border-right-width: 4px;
-    border-right-style: solid;
-    border-right-color: blue;
+div {
+    background-color: blueviolet;
+    border: 2px solid red;
+}
+
+.important-text {
+    color: red;
+    width: 20000px; /* Width/height doesnt works */
+    padding: 20px; /* Padding and margin work only for left and right */
+    margin: 10px;
 }
