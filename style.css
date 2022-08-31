@@ -1,11 +1,16 @@
 div {
     background-color: blueviolet;
     border: 2px solid red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
 
 .important-text {
     color: red;
-    width: 20000px; /* Width/height doesnt works */
+    width: 200px; /* Width/height doesnt works */
     padding: 20px; /* Padding and margin work only for left and right */
     margin: 10px;
+    display: block;
 }
