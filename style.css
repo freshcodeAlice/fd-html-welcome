@@ -1,16 +1,9 @@
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(2,0,36,1) 24%, rgba(132,88,194,0.8743872549019608) 76%, rgba(0,212,255,1) 100%);
+   background-image: url('./images/03cad7cada519b2427a7e0ac885e3992.png');
+    background-repeat: no-repeat;
+     background-size: cover;
+    background-attachment: fixed;
+   color: white;
 }
 
 
-div {
-    width: 100px;
-    height: 100px;
-    border: 2px solid red;
-    display: inline-block;
-}
-
-.pink {
-    background-color: pink;
-}
