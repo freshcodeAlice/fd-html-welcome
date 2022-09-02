@@ -1,9 +1,11 @@
-body {
-   background-image: url('./images/03cad7cada519b2427a7e0ac885e3992.png');
-    background-repeat: no-repeat;
-     background-size: cover;
-    background-attachment: fixed;
-   color: white;
+.wrapper{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    overflow-y:scroll;
+    overflow-x: hidden;
 }
 
-
+.inner{
+    border: 2px solid red;
+}
