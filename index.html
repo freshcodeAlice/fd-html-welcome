@@ -5,46 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body> 
-    <table>
-        <caption>Desribe our table</caption>
-        <thead>
-            <tr>
-                <td> cell 1</td>
-                <td> cell 2</td>
-                <td> cell 3</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="2"> cell 1</td>
-                <td> cell 2</td>
-            </tr>
-            <tr>
-                <td> cell 1</td>
-                <td> cell 2</td>
-                <td> cell 3</td>
-            </tr>
-            <tr>
-                <td> cell 1</td>
-                <td rowspan="2"> cell 2</td>
-                <td> cell 3</td>
-            </tr>
-            <tr>
-                <td> cell 1</td>
-                <td> cell 2</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td> cell 1</td>
-                <td> cell 2</td>
-                <td> cell 3</td>
-            </tr>
-        </tfoot>
-    </table>
+    <section class="main-section">
+        <article class="card-wrapper">
+            <div class="header"></div>
+            <div class="card-content">
+                <img src="./images/divchina.webp" class="user-image"/>
+                <h2 class="user-name text-center">Jane Smith</h2>
+                <p class="user-position text-center">Designer, photographer, traveller</p>
+                <button class="follow-btn">Follow</button>
+                <section class="stats-wrapper">
+                    <div class="user-stats text-center">
+                        <h3 class="stats-header">137</h3>
+                        <p class="stats-type"> Articles
+                        </p>
+                    </div>
+                    <div class="user-stats text-center">
+                        <h3 class="stats-header">5228</h3>
+                        <p class="stats-type"> Followers
+                        </p>
+                    </div>
+                    <div class="user-stats text-center">
+                        <h3 class="stats-header">84</h3>
+                        <p class="stats-type"> Following
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </section>
 </body>
 </html> 

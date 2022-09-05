@@ -1,20 +1,83 @@
-table {
-   border-collapse: collapse; 
+body {
+    --photo-size: 120px; /* Визначення css-зміної */
+    --font-size: 16px;
 }
 
-thead {
-    background-color: greenyellow;
+
+.main-section {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategrey;
+    padding: 20vh;
+}
+.card-wrapper{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto;
 }
 
-tbody {
-    background-color: aquamarine;
+.header {
+    width: 100%;
+    height: 35%;
+    background-image: url('./images/beautiful-shot-of-a-whet-field-with-a-cloudy-sky_181624-26320.webp');
 }
 
-tfoot {
-    background-color: darkgoldenrod;
+.card-content {
+    width: 100%;
 }
 
-td {
-    border: 1px solid black;
-    padding: 8px;
+.user-image {
+    width: var(--photo-size); /* Використання змінної */
+    height: var(--photo-size);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: calc( var(--photo-size) / 2 * (-1));  /* calc() вираховує певне значення */
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.user-name {
+    margin: 3% 0px;
+    font-size: calc(var(--font-size) * 1.5);
+}
+
+.user-position {
+    margin: 2% 0px;
+    font-size: var(--font-size);
+}
+
+.follow-btn {
+    font-size: calc(var(--font-size) + 2px);
+    padding: 8px 20px;   
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 20px;
+    display: block;
+    margin: 6% auto;
+}
+
+.stats-wrapper {
+    margin-top: 10%;
+}
+
+.user-stats {
+    display: inline-block;
+    width: 30%;
+}
+
+.stats-header {
+    font-size: calc(var(--font-size) + 4px);
+    font-weight: 800;
+}
+
+.stats-type {
+    font-size: var(--font-size);
+}
+
+
+.text-center{
+    text-align: center;
 }
