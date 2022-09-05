@@ -9,19 +9,42 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body> 
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-    </ul>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-    </ol>
+    <table>
+        <caption>Desribe our table</caption>
+        <thead>
+            <tr>
+                <td> cell 1</td>
+                <td> cell 2</td>
+                <td> cell 3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"> cell 1</td>
+                <td> cell 2</td>
+            </tr>
+            <tr>
+                <td> cell 1</td>
+                <td> cell 2</td>
+                <td> cell 3</td>
+            </tr>
+            <tr>
+                <td> cell 1</td>
+                <td rowspan="2"> cell 2</td>
+                <td> cell 3</td>
+            </tr>
+            <tr>
+                <td> cell 1</td>
+                <td> cell 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> cell 1</td>
+                <td> cell 2</td>
+                <td> cell 3</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html> 

@@ -1,8 +1,20 @@
-ul li{
-    list-style: disc inside
+table {
+   border-collapse: collapse; 
 }
 
-ol li {
-    list-style-type: disc;
-    list-style-image: url('./images/alien.png');
+thead {
+    background-color: greenyellow;
+}
+
+tbody {
+    background-color: aquamarine;
+}
+
+tfoot {
+    background-color: darkgoldenrod;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
 }
