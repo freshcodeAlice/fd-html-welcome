@@ -1,21 +1,27 @@
-body {
-    background-color: pink;
+.block {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 3px solid red;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    background-color: blueviolet;
+}
+
+.one {
+    display: none;
+}
+
+.two {
+    opacity: 0;
 }
 
 
-.img {
-    width: 100px;
-    height: 100px;
-    background-image: url('./images/03cad7cada519b2427a7e0ac885e3992.png');
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 50%;
+.three {
+    visibility: hidden;
 }
 
-.img2 {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 50%;
+.four {
+
 }
