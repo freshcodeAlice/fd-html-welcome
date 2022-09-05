@@ -1,27 +1,8 @@
-.block {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border: 3px solid red;
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    background-color: blueviolet;
+ul li{
+    list-style: disc inside
 }
 
-.one {
-    display: none;
-}
-
-.two {
-    opacity: 0;
-}
-
-
-.three {
-    visibility: hidden;
-}
-
-.four {
-
+ol li {
+    list-style-type: disc;
+    list-style-image: url('./images/alien.png');
 }
