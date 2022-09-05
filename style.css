@@ -1,17 +1,18 @@
 /*
-vw - vieport width
-vh - vieport height
+
 
 */
 
 body {
-    margin: 0;
+    overflow-x: hidden;
 }
 
 .item {
-    box-sizing: border-box;
-    border: 2px solid red;
-    background-color: blueviolet;
+    background-image: url('https://traversymedia.com/downloads/assets/beachshowcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
