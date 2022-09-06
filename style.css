@@ -1,20 +1,8 @@
-div {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    border: 1px solid black;
-}
-
-div:nth-child(2n+1){
-    background-color: red;
-}
-
-div:nth-child(2n) {
-    background-color: green;
-}
-
-div:nth-child(3n) {
-    background-color: blue;
+body :only-child {
+    color: green;
 }
 
 
+body :only-of-type {
+    color: red;
+}
