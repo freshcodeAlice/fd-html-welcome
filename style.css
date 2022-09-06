@@ -1,17 +1,16 @@
-article p {
-    color: red;
+.container {
+    border: 1px solid black;
 }
 
 
-article > p {
-    color: blue;
+div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-
-h2 ~ p {
-    color: green;
-}
-
-h2 + p {
-    color: violet;
+div ~ div {
+    margin-left: 10px;
 }
