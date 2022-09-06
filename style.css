@@ -1,7 +1,46 @@
- p, span{
-    color: red;
- }
+:root {
+    --font-size: 16px;
+}
 
- article * {
-    
- }
+.navigation {
+
+}
+
+.link-list {
+
+}
+
+.link-list li {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.page-link {
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    font-size: var(--font-size);
+}
+
+.page-link:hover { /* Стан елемента, коли на нього навели курсор */
+    background-color: white;
+    color: blue;
+}
+
+.page-link:active {
+    color: pink;
+}
+
+button.page-link:active {
+    color: red;
+}
+
+.page-link:not(a):active {
+    color: brown
+}
+
+
+:focus {
+   background-color: yellow;
+}
