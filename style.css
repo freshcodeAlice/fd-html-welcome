@@ -1,16 +1,7 @@
-.container {
-    border: 1px solid black;
-}
+ p, span{
+    color: red;
+ }
 
-
-div {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-div ~ div {
-    margin-left: 10px;
-}
+ article * {
+    
+ }
