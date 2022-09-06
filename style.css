@@ -1,46 +1,9 @@
-:root {
-    --font-size: 16px;
-}
-
-.navigation {
-
-}
-
-.link-list {
-
-}
-
-.link-list li {
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.page-link {
-    text-decoration: none;
-    background-color: blue;
-    padding: 10px;
-    color: white;
-    font-size: var(--font-size);
-}
-
-.page-link:hover { /* Стан елемента, коли на нього навели курсор */
-    background-color: white;
+li:first-child {
     color: blue;
 }
 
-.page-link:active {
-    color: pink;
-}
 
-button.page-link:active {
+li:last-child {
     color: red;
 }
 
-.page-link:not(a):active {
-    color: brown
-}
-
-
-:focus {
-   background-color: yellow;
-}
