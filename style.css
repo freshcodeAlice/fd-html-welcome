@@ -6,3 +6,9 @@ body :only-child {
 body :only-of-type {
     color: red;
 }
+
+div:empty {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
