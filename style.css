@@ -1,18 +1,19 @@
 .nav-list {
     margin: 20px;
     font-size: 0; /* Лайфхак для того, щоб прибрати перенос рядка */
+    background-color: orangered;
 }
 
 .list-item {
     display: inline-block;
     font-size: 16px;
     position: relative;
-
+    background-color: orangered;
+    padding: 10px;
 }
 
 .link {
-    padding: 8px;
-    background-color: orangered;
+    padding: 10px;
     color: white;
     text-decoration: none;
     width: 100%;
@@ -34,6 +35,5 @@
 .sub-list-item {
     display: block;
     padding: 10px;
-    background-color: orangered;
 }
 
