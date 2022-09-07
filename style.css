@@ -1,80 +1,39 @@
-* {
-    box-sizing: border-box;
+.nav-list {
+    margin: 20px;
+    font-size: 0; /* Лайфхак для того, щоб прибрати перенос рядка */
 }
 
-:root {
-    --z-index: 5;
-}
-
-body {
-    margin: 0;
-    height: 1000px;
-}
-
-/* Position */
-
-
-
-/*
-static - позиціонування за замовчуванням. Елемент не позиціонований
-
-Позиціонований у разі: 
-relative - відносне позиціонування, відносно того місця, де елемент мав би бути в потоці
-
-fixed - позиціонування відносно вікна перегляду (viewport). Вириває елемент з нормального потоку документу
-
-absolute - позиціонує відносно найближчого по ієрархії нестатичного батьківського елементу. Вириває елемент з нормального потоку документу
-
-*/
-/* top, left, right, bottom */
-
-/* z-index */
-
-.container {
-    background-color: yellowgreen;
-    height: 800px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.wrapper {
-    background-color: dodgerblue;
-    width: 80%;
-    height: 800px;
+.list-item {
+    display: inline-block;
+    font-size: 16px;
     position: relative;
+
 }
 
-.inner {
-    background-color: forestgreen;
-    border: 1px solid black;
+.link {
+    padding: 8px;
+    background-color: orangered;
     color: white;
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    text-decoration: none;
+    width: 100%;
 }
 
-
-.one {
-    position: relative;
-    top: 15px;
-    right: 15px;
-    z-index: 555555555555555555555555555555555555555555555555555555; /* BAD PRACTICE */
-}
-.two {
-    position: fixed;
-    bottom: 50%;
-    right: 50%;
-    z-index: calc(var(--z-index)+1);
+.sub-nav-list {
+    display: none;
+   
 }
 
-.three {
-    position: absolute; /* parent-relative + child-absolute */
-    top: 0;
+.list-item:hover > .sub-nav-list {
+    display: block;
+    position: absolute;
+    top: 100%;
     left: 0;
-    z-index: 2;
+    right: 0;
 }
 
-.four { /* static */
-    z-index: 100; /* не працює */
+.sub-list-item {
+    display: block;
+    padding: 10px;
+    background-color: orangered;
 }
 
