@@ -1,73 +1,31 @@
-header {
-    background-color: aquamarine;
-    height: 40px;
-    width: 100%;
-}
-
-.navigation {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid grey;
-    -webkit-box-shadow: 0px -11px 38px 0px rgba(153,153,153,1);
-    -moz-box-shadow: 0px -11px 38px 0px rgba(153,153,153,1);
-    box-shadow: 0px -11px 38px 0px rgba(153,153,153,1);
-}
-
-.nav-list {
-    margin: 0 auto;
-    width: 75%;
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 10% auto;
+    border: 1px solid black;
+    overflow: hidden;
 }
 
 
-.list-item {
-    display: inline-block;
-    list-style-type: none;
+.box {
+    width: 200px;
+    height: 200px;
+    background-image: url('./images/beautiful-shot-of-a-whet-field-with-a-cloudy-sky_181624-26320.webp');
+    background-size: cover;
 
+    transition: transform 1s ease;
 }
 
-.link {
-    text-decoration: none;
-    padding: 15px;
-    display: inline-block;
-    background-color: pink;
-    transition: all 600ms ease-in-out;
-    position: relative;
+.box:hover{
+    transform: scale(1.5, 1.5);
 }
 
-.link::after, .link::before{
-    height: 0.1em;
-    background-color: black;
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0;
-    transition: all 0.5s ease-in;
-}
 
-.link::before {
-    top: 20%;
-    right: 10%;
-}
+/*
 
-.link::after {
-    left: 10%;
-    bottom: 20%;
+translate() - переміщає по X, Y
 
-}
 
-.link:hover {
-    background-color: blueviolet;
-    color: white;
-}
 
-.link:hover::after, .link:hover::before {
-    width: 80%;
-}
 
-h2 {
-    font-size: 30px;
-    margin: 20px 0;
-}
+*/
