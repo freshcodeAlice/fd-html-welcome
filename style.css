@@ -24,16 +24,27 @@
    
 }
 
+.list-item:hover {
+    background-color: #8a2d0f;
+}
+
 .list-item:hover > .sub-nav-list {
     display: block;
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
+}
+
+.list-item:hover > .sub-sub-nav-list {
+    position: absolute;
+    left: 100%;
+    top: 0;
 }
 
 .sub-list-item {
     display: block;
     padding: 10px;
 }
+
+
 
