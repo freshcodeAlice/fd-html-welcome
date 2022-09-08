@@ -34,11 +34,37 @@ header {
     display: inline-block;
     background-color: pink;
     transition: all 600ms ease-in-out;
+    position: relative;
+}
+
+.link::after, .link::before{
+    height: 0.1em;
+    background-color: black;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    transition: all 0.5s ease-in;
+}
+
+.link::before {
+    top: 20%;
+    right: 10%;
+}
+
+.link::after {
+    left: 10%;
+    bottom: 20%;
+
 }
 
 .link:hover {
     background-color: blueviolet;
     color: white;
+}
+
+.link:hover::after, .link:hover::before {
+    width: 80%;
 }
 
 h2 {
