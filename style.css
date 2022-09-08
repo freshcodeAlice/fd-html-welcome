@@ -1,43 +1,28 @@
 p {
     border: 1px solid black;
+    position: relative;
 }
 
 
-p::before, p::after { /* inline by default */
-    color: red;
-    background-color: aqua;
-}
+p::before, p::after { 
+    display: block;
+    width: 50px;
+    height: 50px;
+    content: '';
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+}  
 
 p::before {
-    content: '>>>';
+    background-color: red;
+    top:0;
+    right: 0;
 }
 
 p::after {
-    content: '<<<';
+    background-color: green;
+    top: 50%;
+    right: 50%;
 }
 
-
-li::before{
-    content: '';
-    background-image: url('./images/alien.png');
-    display: inline-block;
-    background-size: contain;
-    width: 10px;
-    height: 10px;
-}
-
-li {
-    list-style: none;    
-}
-
-
-/*
-
-Зробити структуру документа:
-меню-навігація зверху рядком, 
-заголовок
-параграф тексту, у нього параграфу першая лінія з червоним фоном, перша літера вдвічі більше основного тексту
-Список, іконки якого зробіть псевдоелементами
-
-
-*/
