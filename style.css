@@ -1,31 +1,29 @@
-.wrapper {
-    width: 200px;
-    height: 200px;
-    margin: 10% auto;
-    border: 1px solid black;
-    overflow: hidden;
-}
-
-
 .box {
     width: 200px;
     height: 200px;
     background-image: url('./images/beautiful-shot-of-a-whet-field-with-a-cloudy-sky_181624-26320.webp');
     background-size: cover;
-
     transition: transform 1s ease;
+    margin: 10% auto;
 }
 
 .box:hover{
-    transform: scale(1.5, 1.5);
+    transform: skew(20deg, 40deg)
 }
 
 
 /*
-
 translate() - переміщає по X, Y
+scale - збільшує елемент в задану кількість разів
+rotate - крутить елемент
+skew
+*/
 
 
-
+/*
+ДЗ: зробити картку юзера з будь-яким персонажем
+На лицевому боці - картинка с персонажем (фото) і його ім'я (або нікнейм)
+При наведенні на картку бачимо інший бік, що містить опис персонажа (хоча би 2-3 рядки тексту). 
+Зміна боків має відбуватись плавно.
 
 */
