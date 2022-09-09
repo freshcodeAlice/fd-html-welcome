@@ -1,40 +1,25 @@
-/*
-ДЗ: зробити картку юзера з будь-яким персонажем
-На лицевому боці - картинка с персонажем (фото) і його ім'я (або нікнейм)
-При наведенні на картку бачимо інший бік, що містить опис персонажа (хоча би 2-3 рядки тексту). 
-Зміна боків має відбуватись плавно.
-
-*/
+*{
+    box-sizing: border-box;
+}
 
 
-.wrapper {
-    width: 200px;
+.container {
+    width: 70vw;
     height: 300px;
-    border: 1px solid black;
-    overflow: hidden;
-    position: relative;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
 }
 
-.front-side {
-    width: 100%;
 
-}
-
-.back-side {
-    width: 100%;
-    padding: 20px;
-    color: rgb(125, 0, 0);
-    background-color: rgba(255, 255, 255, 0.333);
-    transition: all 1s ease;
-    position: absolute;
-   bottom: -100%;
-}
-
-.img {
-    width: 100%;
-}
-
-.wrapper:hover > .back-side {
-   bottom: 0;
-    left: 0;
+.item {
+    width: 50px;
+    /* height: 50px; */
+    background-color: teal;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid red;
 }
