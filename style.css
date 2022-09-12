@@ -16,8 +16,8 @@
 
 
 .one {
-    flex-basis: 100px;
-    flex-shrink: 1;
+    flex: 1 0 120px;
+    /*    flex: grow shrink basis */
 }
 
 .two {
