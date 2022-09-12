@@ -9,28 +9,14 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body> 
-    <section class="card-wrapper">
-        <img src="./images/divchina.webp" class="avatar"/>
-        <h2>Name</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <div class="row" >
-            <article>
-                <h3>123</h3>
-                <p>Posts</p>
-            </article>
-            <article>
-                <h3>123</h3>
-                <p>Followers</p>
-            </article>
-            <article>
-                <h3>123</h3>
-                <p>Following</p>
-            </article>
-        </div>
-        <div class="row">
-            <button>Follow</button>
-            <button>Message</button>
-        </div>
-    </section>
+    <form class="sign-in-form flex-column" action="" method="GET">
+        <label for="email">Email or username</label>
+        <input id="email" type="text" placeholder="example@mail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required/>
+        <label class="flex-column"> Password
+        <input type="password" name="pass" required/>
+        </label>
+        <button>Sign In</button>
+    </form>
 </body>
 </html> 
+
