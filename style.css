@@ -1,9 +1,8 @@
 .container {
     border: 1px solid black;
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start;
-    width: 800px;
+    width: 400px;
 }
 
 .inner { 
@@ -17,22 +16,26 @@
 
 
 .one {
-    /* flex-basis: 100px; */
-    flex-grow: 1;
+    flex-basis: 100px;
+    flex-shrink: 1;
 }
 
 .two {
-    flex-grow: 1;
+    flex-basis: 100px;
+    flex-shrink: 1;
 }
 
 .three {
-    flex-grow: 2;
+    flex-basis: 100px;
+    flex-shrink: 2;
 }
 
 .four {
-    flex-grow: 1;
+    flex-basis: 100px;
+    flex-shrink: 1;
 }
 
 .five {
-    flex-grow: 1;
+    flex-basis: 100px;
+    flex-shrink: 1;
 }
