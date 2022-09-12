@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,39 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body> 
+
+<body>
     <form class="sign-in-form flex-column" action="" method="GET">
-        <label for="email">Email or username</label>
-        <input id="email" type="text" placeholder="example@mail.com" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required/>
-        <label class="flex-column"> Password
-        <input type="password" name="pass" required/>
+        <label class="flex-column"> Full Name
+            <input type="text" name="name" required />
         </label>
-        <button>Sign In</button>
+        <label for="email">Email or username</label>
+        <input 
+            id="email" 
+            type="text" 
+            placeholder="example@mail.com" 
+            name="email"
+            autocomplete="email"
+            required 
+            />
+        <label class="flex-column"> Password
+            <input type="password" name="pass" required />
+        </label>
+       Gender
+       <label> 
+            <input type="radio" name="gender" required value="male"/> Male
+        </label>
+        <label> 
+            <input type="radio" name="gender" required value="female"/> Female
+        </label>
+        <label> 
+            <input type="radio" name="gender" required value="non-binary"/> Non-binary
+        </label>
+        <label> 
+            <input type="checkbox" name="adult" required/> Are you adult?
+        </label>
+        <button>Sign Out</button>
     </form>
 </body>
-</html> 
 
+</html>
