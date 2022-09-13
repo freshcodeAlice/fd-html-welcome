@@ -6,39 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <form class="sign-in-form flex-column" action="" method="GET">
-        <label class="flex-column"> Full Name
-            <input type="text" name="name" required />
+
+
+        <label class="flex-column"> First Name
+            <input type="text" name="firstName" required />
         </label>
+        <label class="flex-column"> Last Name
+            <input type="text" name="lastName" required />
+        </label>
+
+
         <label for="email">Email or username</label>
-        <input 
-            id="email" 
-            type="text" 
-            placeholder="example@mail.com" 
-            name="email"
-            autocomplete="email"
-            required 
-            />
+        <input id="email" type="text" placeholder="example@mail.com" name="email" autocomplete="email" required />
         <label class="flex-column"> Password
             <input type="password" name="pass" required />
         </label>
-       Gender
-       <label> 
-            <input type="radio" name="gender" value="male"/> Male
+
+        Gender
+        <label>
+            <input type="radio" name="gender" value="male" /> Male
         </label>
-        <label> 
-            <input type="radio" name="gender"  value="female"/> Female
+        <label>
+            <input type="radio" name="gender" value="female" /> Female
         </label>
-        <label> 
-            <input type="radio" name="gender" value="non-binary"/> Non-binary
+        <label>
+            <input type="radio" name="gender" value="non-binary" /> Non-binary
         </label>
-        <label> 
-            <input type="checkbox" name="adult" required/> Are you adult?
+        <label>
+            <input type="checkbox" name="adult" required /> Are you adult?
+        </label>
+        <label>
+            <input type="range" min="0" max="100" required /> How old are you?
+        </label>
+
+        <input type="hidden" name="hiddenInput" value="super-secret-value" />
+        <label class="flex-column">Where are your from?
+           <select name="city">
+            <optgroup label="Dnipropetrovsk obl.">
+            <option>Dnipro</option>
+            <option>Nikopol</option>
+            <option>Kryvyi Rih</option>
+        </optgroup>
+            <option>Kyiv</option>
+            <option>Kharkiv</option>
+            <option>Zaporizhzhia</option>
+           </select>
         </label>
         <button>Sign Out</button>
     </form>
