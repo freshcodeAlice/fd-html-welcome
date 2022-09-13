@@ -8,11 +8,30 @@
 }
 
 .sign-in-form input {
-    margin: 15px 0;
+    margin: 8px 0;
 }
 
 
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+/* 
+label::after{
+    color: red;
+    content: '*';
+} */
+
+label {
+    position: relative;
+}
+
+
+ label > input:required::before{
+    color: red;
+    content: '*';
+    position: absolute;
+    right: 0;
+    
 }
