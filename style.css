@@ -1,47 +1,30 @@
-.sign-in-form {
-    width: 150px;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-    background-color: aliceblue;
-    margin: 0 auto;
-    padding: 10px;
+h2 {
+    font-size: 15px;
+    color: black;
 }
 
-.sign-in-form input {
-    margin: 8px 0;
+p {
+    color: blue;
 }
 
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
+img {
+    width: 300px;
+    height: 250px;
 }
 
-
-input {
-    background-color: cadetblue;
-    border: none;
-    border-radius: 3px;
-
-}
-input[type="checkbox"] {
-    appearance: none; /* Скидаємо вбудовані в браузер властивості для чекбоксу*/
-    width: 15px;
-    height: 15px;
-    background-color: blueviolet;
-
-}
-
-input[type="checkbox"]:checked {
-    background-color: antiquewhite;
-    border: 5px solid violet;
-}
+@media screen and (min-width: 300px) {
+    h2 {
+        color: red;
+        font-size: 2em;
+    }
 
 
-input::placeholder {
-    color: yellow;
-    padding-left: 20px;
-}
-.checkbox-label {
-    padding-right: 20px;
+    p {
+
+    }
+
+    img {
+        width: 600px;
+        height: 500px;
+    }
 }
