@@ -47,7 +47,24 @@
 
         <input type="hidden" name="hiddenInput" value="super-secret-value" />
         <label class="flex-column">Where are your from?
-           <select name="city">
+            <input type="text" name="city" list="city-list"/>
+            <datalist id="city-list" >
+            <option>Dnipro</option>
+            <option>Nikopol</option>
+            <option>Kryvyi Rih</option>
+            <option>Kyiv</option>
+            <option>Kharkiv</option>
+            <option>Zaporizhzhia</option>  
+            </datalist>
+        </label>
+        <button>Sign Out</button>
+    </form>
+</body>
+
+</html>
+
+<!--
+               <select name="city">
             <optgroup label="Dnipropetrovsk obl.">
             <option>Dnipro</option>
             <option>Nikopol</option>
@@ -57,9 +74,4 @@
             <option>Kharkiv</option>
             <option>Zaporizhzhia</option>
            </select>
-        </label>
-        <button>Sign Out</button>
-    </form>
-</body>
-
-</html>
+-->
