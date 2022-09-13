@@ -42,4 +42,6 @@ input::placeholder {
     color: yellow;
     padding-left: 20px;
 }
-
+.checkbox-label {
+    padding-right: 20px;
+}
