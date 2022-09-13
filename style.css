@@ -16,3 +16,30 @@
     display: flex;
     flex-direction: column;
 }
+
+
+input {
+    background-color: cadetblue;
+    border: none;
+    border-radius: 3px;
+
+}
+input[type="checkbox"] {
+    appearance: none; /* Скидаємо вбудовані в браузер властивості для чекбоксу*/
+    width: 15px;
+    height: 15px;
+    background-color: blueviolet;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: antiquewhite;
+    border: 5px solid violet;
+}
+
+
+input::placeholder {
+    color: yellow;
+    padding-left: 20px;
+}
+
