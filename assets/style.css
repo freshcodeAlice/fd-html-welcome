@@ -1,9 +1,9 @@
-@import url('./reset.css');
-@import url('./mobile.css');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');     
+@font-face {
+    font-family: 'Ms Madi';
+    src: url("./fonts/Ms_Madi/MsMadi-Regular.ttf") format("truetype");
+   }
 
-
-@media screen and (min-width: 576px) {
-    li {
-        list-style-type: disc;
-    }
+h2 { 
+    font-family: 'Ms Madi', cursive;
 }
