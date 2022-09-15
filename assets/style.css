@@ -31,7 +31,7 @@
     border-radius: 10px;
     box-sizing: border-box;
     font-family: sans-serif;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
 }
 
 .login-form * {
@@ -57,14 +57,20 @@
 .login-form input[type="checkbox"] {
     padding: 0;
     margin: 0;
+    margin-right: 10px;
     appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: linear-gradient(312deg, rgba(245,162,67,1) 0%, rgba(238,111,193,0.8382703423166141) 100%);
+    position: relative;
 }
 
-.login-form input[type="checkbox"] {
-
+.login-form input[type="checkbox"]:checked::after{
+    content: '\2714';
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .login-header {
