@@ -1,94 +1,13 @@
-@import url('./reset.css');
-
-:root {
-    font-size: 16px;
-    --main-color: white;
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 2fr);
+    grid-template-rows: 300px 100px;
 }
 
-.background {
-    /* background-color: rgb(2, 0, 12); */
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./images/tree-736885__480.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.login-form {
-
-    color: var(--main-color);
-    width: 350px;
-    height: 600px;
-    border: 1px solid var(--main-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    padding-top: 8%;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    backdrop-filter: blur(5px);
-}
-
-.login-form * {
-    margin-top: 15px;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.login-form .input {
-    border: 1px solid var(--main-color);
-    height: 1.7rem;
-    background-color: transparent;
-}
-
-.login-form .input::placeholder {
-    color: var(--main-color);
-}
-
-.login-form input[type="checkbox"] {
-    padding: 0;
-    margin: 0;
-    margin-right: 10px;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(312deg, rgba(245,162,67,1) 0%, rgba(238,111,193,0.8382703423166141) 100%);
-    position: relative;
-}
-
-.login-form input[type="checkbox"]:checked::after{
-    content: '\2714';
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.login-header {
-    font-size: 2rem;
-}
-
-.text {
-    font-size: 0.8rem;
-}
-
-.login-button {
-    color: inherit;
-    height: 2rem;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(312deg, rgba(245,162,67,1) 0%, rgba(238,111,193,0.8382703423166141) 100%);
-}
-
-.text-bottom {
-    margin-top: auto;
+.item {
+    /* width: 50px;
+    height: 50px; */
+    border: 2px solid black;
+    background-color: coral;
 }
