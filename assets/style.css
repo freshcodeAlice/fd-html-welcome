@@ -24,11 +24,15 @@ grid-row: 3 / 5;
 .three {
     grid-area: 2 / 2 / 4 / 4;
     /*grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+    z-index: 2;
 }
 
 .four {
-
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
 }
+
+
 
 .five {
 
